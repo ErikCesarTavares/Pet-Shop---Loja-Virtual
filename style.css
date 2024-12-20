@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #FFA500;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+.sobre-loja {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.sobre-loja img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Garante que a imagem mantenha a proporção sem distorção */
+    border-radius: 8px;
+}
+
+.sobre-loja div {
+    padding: 16px;
+}
+
+.sobre-loja h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.sobre-loja p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.produto {
+    text-align: center;
+    border: 1px solid #FFA500;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f9f9f9;
+}
+
+.produto img {
+    width: 200px;   /* Ajustando para 200px de largura */
+    height: 200px;  /* Ajustando para 200px de altura */
+    margin-bottom: 8px;
+    border-radius: 8px;
+    object-fit: cover; /* Garante que a imagem não fique deformada */
+}
+
+.produto h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.produto p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.produto button {
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #FFA500;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Layout Responsivo */
+@media screen and (max-width: 640px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .sobre-loja {
+        grid-template-columns: 1fr;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .produto img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .produtos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
