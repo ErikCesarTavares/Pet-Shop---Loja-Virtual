@@ -51,6 +51,15 @@ A loja virtual **It Malia Pet Shop** oferece:
 
 ---
 
+## 🌍 Acesse o Projeto
+
+Você pode acessar o projeto online clicando no link abaixo:
+
+[👉 It Malia Pet Shop 🐾](https://erik-pet-shop-loja-virtual.vercel.app/)
+
+
+---
+
 ## 🧠 Como Visualizar
 
 ### Passo 1: Clone o Repositório
